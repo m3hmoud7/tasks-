@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.main {
+  img {
+    width: 600px;
+    height: 500px;
+    border: 5px solid gray;
+  }
+}
+
+.images {
+  width: 600px;
+  display: flex;
+  gap: 3px;
+
+  img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid gray;
+    &:hover {
+      border: 5px solid green;
+      cursor: pointer;
+    }
+  }
+}
